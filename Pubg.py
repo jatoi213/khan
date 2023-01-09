@@ -279,7 +279,7 @@ class __xxx__:
     def __metode__(self, user, __chi__, cebok):
         global ok, cp, loop
         sys.stdout.write(
-            f"\r\x1b[1;97m[RAHI] {loop}~{len(self.id)} \x1b[1;92mOK={len(ok)}\x1b[1;97m/\x1b[1;91mCP={len(cp)} ")
+            f"\r\x1b[1;97m[RAHI] {loop}~{len(self.id)} \x1b[1;91mCP={len(ok)}\x1b[1;97m/\x1b[1;92mOK={len(cp)} ")
         sys.stdout.flush()
         try:
             for pw in __chi__:
